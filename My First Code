@@ -1,0 +1,57 @@
+#Ку я Akari я начал создавать 1 код༼ つ ◕_◕ ༽つ
+import string
+import random
+import time
+#Приветствие - Greeting
+print ("Hello", "World")
+print ("My name is Akari")
+#Сбор информации
+Name = input("Please enter your name")
+age = int(input("Please enter your age"))
+#Блок с рамками возраста - A block with age limits
+if age < 10:
+    print("You're still a little boy")
+elif age > 100:
+    print("O your old people")
+else:
+    print("It's okey")
+#Хочешь ли ты чтобы пароль придумали за тебя - Do you want the password to be created for you
+print ("your password more length 8 symbols")
+user_clik = input("Do you want a random password Enter Yes/No")
+#Да хочу - YES of corse
+if user_clik == 'Yes':
+    n = int(input('Enter Quantity Symbols: '))
+    symbols = list(string.ascii_letters + string.digits)
+    random.shuffle(symbols)
+    rpassword = ''.join(symbols[:n])
+    print('Suggested password')
+    print(rpassword)
+#Нет не хочу - No
+else:
+    user_clik == 'No'
+password = input("Please enter your password")
+#Проверка на кол-во символов в пароле - Checking for the number of characters in the password
+length = len(password)
+leng = len(password)
+if leng < 1:
+    print("No")
+elif leng < 8:
+    print("No")
+else:
+    print("oK")
+my_list = [Name, age, password]
+#Блок логина - A block cheaking with login
+print("Enter your Login")
+Names = input("")
+if Names in Name:
+    print ("Login susceful")
+else:
+    print ("No no no try again to 10 sec")
+    time.sleep(5)
+#Блок пароля - A block cheaking with password
+passwords = input("")
+if passwords in password:
+    print ("password susceful")
+else:
+    print ("No no no try again to 10 sec")
+    time.sleep(5)
